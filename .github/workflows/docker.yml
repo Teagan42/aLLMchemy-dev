@@ -32,7 +32,7 @@ jobs:
       found: ${{ steps.look.outputs.found }}
       file: ${{ steps.look.outputs.file }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - id: look
         name: Look for a Dockerfile
         run: |
@@ -54,7 +54,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: docker/setup-qemu-action@v3
       - uses: docker/setup-buildx-action@v3

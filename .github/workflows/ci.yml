@@ -27,7 +27,7 @@ jobs:
       # clone because a truncated history hides a committed key, and dev/test.sh's `secrets`
       # suite turns that refusal into a hard failure. actions/checkout defaults to depth 1,
       # so without this every run is red for a reason that looks like a scanner bug.
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
 

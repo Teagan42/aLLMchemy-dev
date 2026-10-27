@@ -23,7 +23,7 @@ jobs:
     timeout-minutes: 5
     steps:
       # Full history: the range check needs the merge base, which a shallow clone lacks.
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
